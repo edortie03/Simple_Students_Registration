@@ -8,33 +8,35 @@
 
 ## 1. Project Description
 
-The **Simple Student Self-Registration System (SSSRS)** is a beginner-level Django web application that allows students to register themselves into the system without the help of an administrator.
+The **Simple Student Self-Registration System (SSSRS)** is a beginner-level Django web application that allows students to register themselves into the system without administrator assistance.
 
-The system also provides basic administrative control to view registered students.
-This project is designed mainly for **learning purposes**, especially for beginners in **Django**, **Git**, and **GitHub collaboration**.
+The system also provides basic administrative functionality to view and manage registered students through the Django Admin Panel.
+
+This project is developed mainly for **learning purposes**, especially for beginners in **Django**, **Git**, and **GitHub collaboration**.
 
 ---
 
-## 2. Objectives
+## 2. Project Objectives
 
-* Allow students to create their own accounts (self-registration)
+* Allow students to create accounts through self-registration
 * Manage student information using Django ORM
 * Practice Django authentication and authorization
-* Support beginner-friendly team collaboration using GitHub
+* Support beginner-friendly collaboration using Git and GitHub
 
 ---
 
 ## 3. System Features
 
-Student Features
+### Student Features
+
 * Student self-registration
 * Login and logout
 * View personal profile information
 
-Admin Features
+### Admin Features
 
 * View all registered students
-* Manage users through Django Admin Panel
+* Manage users via the Django Admin Panel
 
 ---
 
@@ -48,70 +50,128 @@ Admin Features
 
 ---
 
-## 5. Project Structure (Basic)
+## 5. Basic Project Structure
 
 ```
 Students_Registration/
 │
-├── Students_Registration/        # Main Django project folder
-├── Students/     # Student registration app
-├── db.sqlite3    # Database
-└── manage.py     # Django management file
+├── Students_Registration/   # Main Django project folder
+├── Students/                # Student registration app
+├── db.sqlite3               # SQLite database
+└── manage.py                # Django management file
+└── requirements.txt         # Requirements.txt file 
 ```
+
+---
 
 ## 6. Installation and Setup
 
-1. Install Python (version 3.8 or higher)
-2. Create and activate a virtual environment
-3. Install Django
+Follow the steps below to run the project locally.
 
-   ```bash
-   pip install django
-   ```
-4. Clone the project repository
-5. Run migrations
+### 1. Clone the Project Repository
 
-   ```bash
-   python manage.py migrate
-   ```
-6. Create a superuser
+```bash
+git clone https://github.com/edortie03/Simple_Students_Registration.git
+cd Simple_Students_Registration
+```
 
-   ```bash
-   python manage.py createsuperuser
-   ```
-7. Start the development server
+---
 
-   ```bash
-   python manage.py runserver
-   ```
-8. Open your browser and visit
+### 2. Create a Virtual Environment
 
-   ```
-   http://127.0.0.1:8000/
-   ```
+```bash
+python -m venv venv
+```
+
+---
+
+### 3. Activate the Virtual Environment
+
+**Windows**
+
+```bash
+venv\Scripts\activate
+```
+
+**Linux / macOS**
+
+```bash
+source venv/bin/activate
+```
+
+---
+
+### 4. Install Project Dependencies
+
+All required packages are already listed in `requirements.txt`.
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+### 5. Apply Database Migrations
+
+```bash
+python manage.py migrate
+```
+
+---
+
+### 6. Create a Superuser (Admin)
+
+```bash
+python manage.py createsuperuser
+```
+
+Follow the prompts to create admin login credentials.
+
+---
+
+### 7. Run the Development Server
+
+```bash
+python manage.py runserver
+```
+
+Open your browser and visit:
+
+```
+http://127.0.0.1:8000/
+```
+
+Admin panel:
+
+```
+http://127.0.0.1:8000/admin/
+```
+
+---
 
 ## 7. User Roles
 
-* **Student:** Can register, login, and view personal details
-* **Admin:** Can manage all users via Django Admin Panel
+* **Student:** Can register, log in, log out, and view personal details
+* **Admin:** Can manage users and student data via the Django Admin Panel
 
 ---
 
 ## 8. Learning Outcomes
 
-* Understanding Django project structure
+* Understanding Django project and app structure
 * Working with Django forms and authentication
 * Using Django ORM for database operations
-* Collaborating using Git and GitHub
+* Collaborating effectively using Git and GitHub
 * Applying basic web development concepts
 
+---
 
 ## 9. Limitations
 
 * No email verification
 * Basic user interface
 * No role-based dashboards
-* Intended for learning and demonstration only
+* Intended for learning and demonstration purposes only
 
 ---
 
@@ -127,4 +187,17 @@ Students_Registration/
 
 ## 11. Contributors
 
-This project is developed by a team of beginner developers for learning purposes.
+This project is developed by a team of beginner developers for educational purposes.
+
+---
+
+## Updating Dependencies
+
+If new packages are added during development, update the dependency file using:
+
+```bash
+pip freeze > requirements.txt
+```
+
+Commit the updated file to keep all contributors in sync.
+Always work on your branch abd then push on the main branch
