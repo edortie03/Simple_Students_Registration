@@ -1,4 +1,4 @@
-Simple Student Self-Registration System (SSSRS)
+## Simple Student Self-Registration System (SSSRS)
 
 **Framework:** Django (Python)
 **Project Type:** Web Application
@@ -6,7 +6,7 @@ Simple Student Self-Registration System (SSSRS)
 
 ---
 
-1. Project Description
+## 1. Project Description
 
 The **Simple Student Self-Registration System (SSSRS)** is a beginner-level Django web application that allows students to register themselves into the system without the help of an administrator.
 
@@ -15,7 +15,7 @@ This project is designed mainly for **learning purposes**, especially for beginn
 
 ---
 
-2. Objectives
+## 2. Objectives
 
 * Allow students to create their own accounts (self-registration)
 * Manage student information using Django ORM
@@ -24,7 +24,7 @@ This project is designed mainly for **learning purposes**, especially for beginn
 
 ---
 
-3. System Features
+## 3. System Features
 
 Student Features
 * Student self-registration
@@ -38,7 +38,7 @@ Admin Features
 
 ---
 
-4. Technologies Used
+## 4. Technologies Used
 
 * **Programming Language:** Python
 * **Framework:** Django
@@ -48,7 +48,7 @@ Admin Features
 
 ---
 
-5. Project Structure (Basic)
+## 5. Project Structure (Basic)
 
 ```
 Students_Registration/
@@ -59,7 +59,7 @@ Students_Registration/
 └── manage.py     # Django management file
 ```
 
-6. Installation and Setup
+## 6. Installation and Setup
 
 1. Install Python (version 3.8 or higher)
 2. Create and activate a virtual environment
@@ -90,14 +90,14 @@ Students_Registration/
    http://127.0.0.1:8000/
    ```
 
-7. User Roles
+## 7. User Roles
 
 * **Student:** Can register, login, and view personal details
 * **Admin:** Can manage all users via Django Admin Panel
 
 ---
 
-8. Learning Outcomes
+## 8. Learning Outcomes
 
 * Understanding Django project structure
 * Working with Django forms and authentication
