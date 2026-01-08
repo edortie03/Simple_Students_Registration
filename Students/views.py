@@ -5,7 +5,7 @@ from django.forms import StudentForm
 # Register Student
 def register_student(request):
     if request.method == 'POST':
-        form = StudentForm(request.
+        form = StudentForm(request.POST)
         if form.is_valid():
             form.save()
             return redirect('home')
