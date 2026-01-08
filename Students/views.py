@@ -11,4 +11,4 @@ def register_student(request):
             return redirect('home')
     else:
         form = StudentForm()
-    return render(request, 'Students/register.html', {'form': form})
+    return render(request, 'register.html', {'form': form})
