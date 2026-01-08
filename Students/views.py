@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from .models import Student
-from django.forms import StudentForm
+from .forms import StudentForm
 
 # Register Student
 def register_student(request):
